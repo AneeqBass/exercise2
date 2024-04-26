@@ -1,0 +1,99 @@
+*{
+    background-color: #226BC5;
+    color: whitesmoke;
+    font-size: 25px;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+.nav li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    transition: background-color 1s ease, color 1s ease;
+}
+li a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+nav{
+    border-bottom: 2px dotted whitesmoke; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    border-collapse: seperate;
+}
+
+td, th {
+    border-bottom: 1px solid whitesmoke; 
+    padding: 8px; 
+    text-align: center;
+    padding: 10px;
+}
+.img{
+    transition: 1500ms;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+}
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.orangeBg *{
+    background-color: orange;
+}
+article{
+    background-color: orange;
+}
+ul li{
+    list-style: none;
+    margin-left: 10%;
+}
+.blackLine ::first-line{
+    color: black;
+}
+.container2{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+}
+.card{
+    position: relative;
+    transition: transform linear 1s;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+}
+.container2 .card:hover{
+    transform: rotateY(180deg) rotateZ(180deg);
+    cursor: pointer;
+} 
+.container2 .card{
+    perspective: 1000px;
+}
